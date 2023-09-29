@@ -10,9 +10,14 @@ I used Laravel 10 + Vue JS
 - Clone the project
 - Install Composer and run [composer install]
 - Install Node JS
-- If .env is not existing you can copy and rename the .env.example (Do not change any configuration)
+- Copy and rename the .env.example (Add necessary .env configuration see Runtime Error below)
 - Go to project and run [php artisan serve] and run [npm run dev]
-- No database needed since the exam is more of an API and web design
+- No database needed
+
+## Runtime Error
+- Github warns me to not expose api keys and app id in publicly accessed github project (I've sent to Kristel Navarro my own Openweather API key and Foresquare App ID, if you do not have one.)
+- Encountering error if no VITE_OPENWEATHER_APP_ID AND VITE_FORESQUARE_API_KEY set in .env
+- Provide neccessary .env configuration.
 
 
 ## UI/UX Implementation

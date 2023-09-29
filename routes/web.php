@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::middleware(['permit'])->group(function () {
+    Route::get('/', function () {
+        return view('index');
+    });
+});
+
+Route::get('/error', function () {
+    return view('error_setup');
 });
